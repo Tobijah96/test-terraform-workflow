@@ -1,10 +1,7 @@
-terraform {
-backend "local" {
-path = ".terraform.tfstate"
-}
-}
-
-resource "local_file" "hello_world" {
-  content = var.hello
-  filename = var.name
+resource "local_file" "hello_world_py" {
+  
+  filename = "${path.module}/${var.output_file_name}"
+  content  = <<-EOT
+    print("Hello World")
+  EOT
 }
