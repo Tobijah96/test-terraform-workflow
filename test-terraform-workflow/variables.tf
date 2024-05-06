@@ -1,5 +1,5 @@
 variable "greeting_message" {
-  # Zmienna przechowująca wiadomość powitalną
+  
   type    = string
-  default = "Hello World"
+  default = "hello_world.py"
 }
