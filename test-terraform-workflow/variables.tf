@@ -1,4 +1,5 @@
-variable "function_content" {
-  description = "Treść funkcji Pythona"
-  type        = string
+variable "greeting_message" {
+  # Zmienna przechowująca wiadomość powitalną
+  type    = string
+  default = "Hello World"
 }
